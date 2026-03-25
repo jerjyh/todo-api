@@ -1,5 +1,7 @@
 # Todo List REST API
 
+**GitHub Repo：** https://github.com/jerjyh/todo-api
+
 使用 Node.js 和 Express 建立的 Todo List REST API，資料儲存於記憶體中。
 
 ## 安裝
