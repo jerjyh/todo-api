@@ -47,6 +47,10 @@ app.delete('/todos/:id', (req, res) => {
   res.status(204).send();
 });
 
-app.listen(PORT, () => {
-  console.log(`Todo API 執行中：http://localhost:${PORT}`);
-});
+if (require.main === module) {
+  app.listen(PORT, () => {
+    console.log(`Todo API 執行中：http://localhost:${PORT}`);
+  });
+}
+
+module.exports = app;
